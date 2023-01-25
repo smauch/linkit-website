@@ -1,0 +1,94 @@
+<!--Vollbild Landing Seite-->
+<div [ngStyle]="{ color: this.siteColor }">
+  <div
+    [style.background-image]="'url(./assets/pics/dein-einstieg/landing.jpg)'"
+    [style.background-color]="this.siteColor"
+    class="fullscreen-landing"
+    title="Ein Mann blickt auf eine Stadt, durch die sich ein Netzwerk aufsapnnt, bei Nacht herab."
+  >
+    <div class="container">
+      <div class="landing-headline">
+        <h1 class="text-white">Your journey</h1>
+        <h2 class="text-white headline-wrapper">
+          <span [ngStyle]="{ backgroundColor: this.siteColor }"
+            >Du möchtest die Industrie von Morgen bereits heute hautnah erleben
+            und mitgestalten?</span
+          >
+        </h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+    <!--Infotexte mit Icons-->
+    <div class="container my-3">
+      <div class="d-flex flex-wrap justify-content-around">
+        <svg-icon
+          class="order-md-1 align-self-center p-3"
+          src="./assets/streamline-light/44-entertainment-event-hobbies/04-party/party-dance.svg"
+          [svgStyle]="{ 'width.px': 120 }"
+        ></svg-icon>
+        <div class="info-wrapper order-md-0 p-3">
+          <h3>Egal ob Erstsemester oder Master</h3>
+          <p class="info-text">
+            Um Mitglied bei linkit zu werden, benötigst Du nicht unbedingt
+            Grundwissen im Bereich Industrie 4.0. Wir bieten für alle neuen
+            Mitglieder Grundlagenschulungen an und bilden uns regelmäßig durch
+            Workshops und Fachvorträge fort, um unser Wissen dann in Projekte
+            einzubringen. Du solltest vor allem Motivation und Spaß an der
+            Arbeit im Team mitbringen!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--Polygon Seperator-->
+    <div>
+      <div class="polygon-color">
+        <h2 class="polygon-text text-white text-center container">
+          Bewerbung
+        </h2>
+      </div>
+      <div
+        class="polygon-pic"
+        [ngStyle]="{ 'background-position': 'center 15%' }"
+        [style.background-image]="
+          'url(./assets/pics/dein-einstieg/bewerbung.jpg)'
+        "
+      ></div>
+    </div>
+
+    <!--Infotexte mit Icons-->
+    <div class="container my-3">
+      <div class="d-flex flex-wrap justify-content-around">
+        <svg-icon
+          class="order-md-0 align-self-center p-3"
+          src="./assets/streamline-light/06-business-products/03-business-methaphors/business-crossroad.svg"
+          [svgStyle]="{ 'width.px': 120 }"
+        ></svg-icon>
+        <div class="info-wrapper order-md-1 p-3">
+          <h3>Dein Weg zu linkit</h3>
+          <!-- <p>Aktuell befinden wir uns außerhalb des Bewerbungszeitraums. Wenn du dich dennoch initiativ bewerben möchtest, schreibe uns eine Mail an <a href="mailto:hr@linkit.tech">hr@linkit.tech</a>.</p> -->
+          <ol>
+            <li>Komme zu unserem Infoabend und lerne uns kennen</li>
+            <li>Bewerbe dich über unser Portal zum Semesterstart</li>
+            <li>Warte auf unsere Rückmeldung und weitere Infos</li>
+            <li>Herzlich Willkommen bei linkit</li>
+          </ol>
+          <!-- <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=yGliMOpXRkC-8ujbWPoBUYnH1j9KFARHoAz7JSNVwOhUMUFWVFEwQVNWUFQySTdGREZIRTBKRkE3OC4u" target="_blank" rel="noopener">
+            <button
+              [ngStyle]="{
+                backgroundColor: this.siteColor,
+                borderColor: this.siteColor
+              }"
+              type="button"
+              class="btn btn-primary"
+            >
+              Jetzt bewerben
+            </button>
+          </a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

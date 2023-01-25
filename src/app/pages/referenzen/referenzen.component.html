@@ -1,0 +1,167 @@
+<div [ngStyle]="{ color: this.siteColor }">
+  <div
+    [style.background-image]="'url(./assets/pics/referenzen/landing.jpg)'"
+    [style.background-color]="this.siteColor"
+    class="fullscreen-landing"
+    title="Eine Frau die nachdänklich ins nichts schaut, in der rechten Bildhälfte sind digitalber Dashbords erkennbar."
+  >
+    <div class="container">
+      <div class="landing-headline">
+        <h1>Your challenge</h1>
+        <h2 class="text-white headline-wrapper">
+          <span [ngStyle]="{ backgroundColor: this.siteColor }"
+            >Du möchtest dich einer Herausforderung stellen und Erfahrungen
+            sammeln?</span
+          >
+        </h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="container my-3">
+      <div class="info-container d-flex flex-wrap justify-content-around">
+        <svg-icon
+          class="order-md-1 align-self-center p-3"
+          src="./assets/streamline-light/21-messages-chat-smileys/03-conversation/conversation-question-warning.svg"
+          [svgStyle]="{ 'width.px': 120 }"
+        ></svg-icon>
+        <div class="info-wrapper order-md-0 p-3">
+          <h3>Problemlöser, auch für die Industrie</h3>
+          <p class="info-text">
+            Interessanten und wichtigen Fragestellungen nachgehen – ein
+            weiteres, attraktives Angebot unserer Hochschulgruppe. Durch unsere
+            internen Projekte wie die Hands-on Data Science Challenges und
+            Industrieprojekte bieten wir einen direkten Praxisbezug. Unser Team
+            zeichnet sich durch Eigenständigkeit, Motivation und
+            Zielorientierung aus.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--Polygon Seperator-->
+    <div class="sperator-polygon">
+      <div class="polygon-color">
+        <h2 class="polygon-text text-white text-center container">
+          Interne Projekte
+        </h2>
+      </div>
+      <div
+        class="polygon-pic"
+        [ngStyle]="{ 'background-position': 'center 40%' }"
+        [style.background-image]="
+          'url(./assets/pics/referenzen/interne_projekte.jpg)'
+        "
+      ></div>
+    </div>
+
+    <!--Infotexte mit Icons-->
+    <div class="container my-3">
+      <div class="info-container d-flex flex-wrap justify-content-around">
+        <svg-icon
+          class="order-md-0 align-self-center p-3"
+          src="./assets/streamline-light/02-technology/01-artificial-intelligence/robot.svg"
+          [svgStyle]="{ 'width.px': 120 }"
+        ></svg-icon>
+        <div class="info-wrapper order-md-1 p-3">
+          <h3>Smart Robotics</h3>
+          <p class="info-text">
+            Dunkermotoren GmbH hat linkit für ein Jahr Hardware zur Entwicklung
+            eines Messemodells für die Industrie- und Automatisierungsmessen zur
+            Verfügung gestellt. Wir haben uns dafür entschieden zu
+            demonstrieren, was heute mit High-End Servo- und Linearmotoren in
+            Verbindung mit Computer Vision möglich ist. Dazu haben wir ein
+            Portalgreifsystem entwickelt, welches in der Lage ist, sich zufällig
+            bewegende Schokoladentafeln und deren Geschmacksrichtung zu
+            identifizieren, exakt anzusteuern und dem Messebesucher auf je nach
+            Wunsch auszugeben.
+          </p>
+        </div>
+      </div>
+
+      <div class="d-flex flex-wrap justify-content-around">
+        <svg-icon
+          class="order-md-1 align-self-center p-3"
+          src="./assets/streamline-light/04-programing-apps-websites/01-programing/programming-laptop-type.svg"
+          [svgStyle]="{ 'width.px': 120 }"
+        >
+        </svg-icon>
+        <div class="info-wrapper order-md-0 p-3">
+          <h3>Hands-on Data Science</h3>
+          <p class="info-text">
+            linkit wirbt nicht nur mit dem Buzzword “Data Science”, sondern
+            schult seine Mitglieder auch darin: Teilnehmer des Hands on Data
+            Science Projekts können so parallel zum theoretischen Studium
+            praktische Erfahrung im Umgang mit Daten und Machine Learning
+            Algorithmen sammeln. Bei einer Data Science Challenge wird nach der
+            Einführung in die Grundlagen in kleinen Teams an einem Datensatz und
+            dessen Nutzung für ein vorgegebenes Prognose-Ziel (z.B.
+            Verkaufszahlen prognostizieren oder Bild als Hund klassifizieren)
+            gearbeitet, wobei die Teams in Konkurrenz um den besten Ansatz und
+            die höchste Genauigkeit der Prognose stehen. Pro Semester gibt es
+            zwischen zwei und drei verschiedene Challenges mit sich steigerndem
+            Schwierigkeitsgrad. Eine Abschlussveranstaltung mit Preisverleihung
+            darf am Ende einer jeden Challenge natürlich nicht fehlen.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--Polygon Seperator-->
+    <div class="sperator-polygon">
+      <div class="polygon-color">
+        <h2 class="polygon-text text-white text-center container">
+          Industrieprojekte
+        </h2>
+      </div>
+      <div class="polygon-pic" [ngStyle]="{ 'background-position': 'center 40%' }" [style.background-image]="
+              'url(./assets/pics/referenzen/industrieprojekte.jpg)'
+            "></div>
+    </div>
+
+    <!--Infotexte mit Icons-->
+    <div class="container my-5">
+      <div class="d-flex flex-wrap justify-content-around">
+        <svg-icon
+          class="order-md-0 align-self-center p-3"
+          src="./assets/streamline-light/02-technology/04-virtual-reality/vr-globe.svg"
+          [svgStyle]="{ 'width.px': 120 }"
+        ></svg-icon>
+        <div class="info-wrapper order-md-1 p-3">
+          <h3>Schlanke Auftragssteuerung bei Schöck</h3>
+          <p class="info-text">
+            „Komplexe Themenzusammenhänge im Bereich unserer Auftragssteuerung
+            konnten von linkit sehr schnell durchdrungen werden, wodurch ein
+            Austausch auf Augenhöhe und eine gewinnbringende Zusammenarbeit
+            stattfinden konnte.“
+          </p>
+        </div>
+      </div>
+
+      <!--Infotexte mit Icons-->
+      <div class="container my-3">
+        <div class="d-flex flex-wrap justify-content-around">
+          <svg-icon
+            class="order-md-1 align-self-center p-3"
+            src="./assets/streamline-light/01-interface essential/02-dashboard/pie-line-graph-desktop.svg"
+            [svgStyle]="{ 'width.px': 120 }"
+          >
+          </svg-icon>
+          <div class="info-wrapper order-md-0 p-3">
+            <h3>Predictive Maintenance bei Sick</h3>
+            <p class="info-text pb-5">
+              Datenanalyse zur Vorhersage von Wartungs- einsätzen in
+              Abfallverbrennungsanlagen und Ableitung von Geschäftsmodellen für
+              Smart Services.
+              <br />
+              „Das linkit-Team war ein sehr gut organisierter und konstruktiver
+              Partner für die Modellentwicklung zur Vorhersage von
+              Emissionswerten.“
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

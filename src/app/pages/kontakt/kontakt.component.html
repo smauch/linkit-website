@@ -1,0 +1,86 @@
+<div [ngStyle]="{ color: this.siteColor }">
+  <!--Polygon Seperator-->
+  <div>
+    <div class="polygon-color top">
+      <h2 class="polygon-text text-white text-center container">
+        Kontakt
+      </h2>
+    </div>
+    <div
+      class="polygon-pic margin-top"
+      [style.background-image]="'url(./assets/pics/kontakt/landing.jpg)'"
+    ></div>
+  </div>
+
+  <div class="container py-5">
+    <!--Infotext mit Bild-->
+    <div class="d-flex flex-wrap justify-content-around">
+      <div class="info-wrapper order-md-0 p-3">
+        <h3>Kontaktiere uns - Studierende</h3>
+        <p class="info-text">
+          Du bist Student und hast Interesse an Industrie 4.0? Falls du
+          Interesse oder Fragen hast, dann schreibe uns doch einfach eine E-Mail
+          oder komme bei einer unserer Veranstaltungen vorbei.
+        </p>
+        <button
+          [ngStyle]="{
+            backgroundColor: this.siteColor,
+            borderColor: this.siteColor
+          }"
+          type="button"
+          class="btn btn-primary"
+          onclick="location.href='mailto:info@linkit.tech'"
+        >
+          Schreib uns eine E-Mail
+        </button>
+      </div>
+      <div class="text-center pt-4">
+        <h5 class="pt-3">linkit e.V.</h5>
+        <p>
+          c/o AStA am KIT<br />
+          Adenauerring 7<br />
+          76131 Karlsruhe
+        </p>
+      </div>
+    </div>
+    <hr />
+    <div class="d-flex flex-wrap-reverse justify-content-around">
+      <div class="p-2 text-center">
+        <img
+          class="profile-pic"
+          src="assets/pics/ueber-uns/RL/Elif_Oezcelik.jpg"
+          alt="Elif Oezcelik"
+        />
+        <h5 class="pt-3">Elif Özcelik</h5>
+        <p class="mb-0">Ressortleiterin Akquise</p>
+        <button
+          type="button"
+          class="btn btn-link size"
+          onclick="location.href='mailto:akquise@linkit.tech'"
+          data-toggle="tooltip"
+          data-placement="bottom"
+          title="Schreibe eine E-Mail"
+        >
+          <svg-icon
+            class="align-self-center p-2"
+            src="./assets/streamline-light/19-emails/07-email-actions/email-action-unread.svg"
+            [svgStyle]="{ 'width.px': 25 }"
+          >
+          </svg-icon>
+        </button>
+
+      </div>
+      <div class="info-wrapper order-md-0 p-3">
+        <h3>Kontaktiere uns - Unternehmen</h3>
+
+        <p class="info-text">
+          Sie sind auf der Suche nach kreativen Studierenden? Egal ob Projekte,
+          Vorträge oder Workshops – wir sind immer auf der Suche nach
+          interessanten Unternehmen und freuen uns, wenn wir Sie kennenlernen
+          dürfen! Unsere Akquise Ressortleiterin Elif Özcelik freut sich über
+          Ihre Nachricht!
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,183 @@
+<!-- header -->
+<ngx-json-ld [json]="schema"></ngx-json-ld>
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" [routerLink]="['/']" routerLinkActive="aktive">
+    <img
+      class="linkit-logo"
+      src={{logoPath}}
+      alt="linkit e.V. Logo"
+    />
+  </a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarNavAltMarkup"
+    aria-controls="navbarNavAltMarkup"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="container-fluid nav-container">
+    <div class="collapse navbar-collapse justify-content-between" id="navbarNavAltMarkup">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['/ueber-uns']"
+            routerLinkActive="active"
+            >ÜBER UNS
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['/dein-einstieg']"
+            routerLinkActive="active"
+            >DEIN EINSTIEG</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['/unternehmen']"
+            routerLinkActive="active"
+            >FÜR UNTERNEHMEN</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['/referenzen']"
+            routerLinkActive="active"
+            >REFERENZEN</a
+          >
+        </li>
+
+        <!-- <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/blog']" routerLinkActive="active"
+            >BLOG</a
+          >
+        </li> -->
+      </ul>
+      <ul class="nav navbar-nav me-auto w-20 justify-content-end" style="padding-left: 12px;">
+        <li class="nav-item">
+          <a
+            class="social-icons"
+            href="https://www.linkedin.com/company/linkit-e.v./"
+          >
+            <svg-icon
+              class="pr-3"
+              src={{iconPathLinkedin}}
+              [svgStyle]="{ 'height.px': 25 }"
+            ></svg-icon>
+          </a>
+
+          <a class="social-icons" href="https://www.facebook.com/linkit.tech/">
+            <svg-icon
+              class="pr-3"
+              src={{iconPathFacebook}}
+              [svgStyle]="{ 'height.px': 25}"
+            ></svg-icon>
+          </a>
+
+          <a
+            class="social-icons"
+            href="https://www.instagram.com/linkit_karlsruhe/"
+          >
+            <svg-icon
+              src={{iconPathInstagram}}
+              [svgStyle]="{ 'height.px': 25 }"
+            ></svg-icon>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- routes will be rendered here -->
+<router-outlet></router-outlet>
+
+<!-- footer -->
+<footer [ngStyle]="{ backgroundColor: this.siteColor }" class="footer">
+  <div class="container">
+    <div class="d-flex justify-content-between">
+      <ul class="list-unstyled m-0">
+        <li>
+          <a
+            class="footer-link"
+            [routerLink]="['/kontakt']"
+            routerLinkActive="active"
+            >Kontakt</a
+          >
+        </li>
+        <li>
+          <a
+            class="footer-link"
+            [routerLink]="['/impressum']"
+            routerLinkActive="active"
+            >Impressum</a
+          >
+        </li>
+        <li>
+          <a
+            class="footer-link"
+            href="https://mailchi.mp/2bef7830dd3e/linkitjobnewsletter"
+            routerLinkActive="active"
+            >Job Newsletter</a
+          >
+        </li>
+        <li>
+          <a
+            class="footer-link"
+            [routerLink]="['/datenschutz']"
+            routerLinkActive="active"
+            >Datenschutzerklärung</a
+          >
+        </li>
+
+        <li class="mt-2">
+          <a
+            class="social-icons"
+            href="https://www.linkedin.com/company/linkit-e.v./"
+          >
+            <svg-icon
+              class="pr-3"
+              src="./assets/icons/linkedin.svg"
+              [svgStyle]="{ 'height.px': 25 }"
+            ></svg-icon>
+          </a>
+
+          <a class="social-icons" href="https://www.facebook.com/linkit.tech/">
+            <svg-icon
+              class="pr-3"
+              src="./assets/icons/facebook.svg"
+              [svgStyle]="{ 'height.px': 25 }"
+            ></svg-icon>
+          </a>
+
+          <a
+            class="social-icons"
+            href="https://www.instagram.com/linkit_karlsruhe/"
+          >
+            <svg-icon
+              src="./assets/icons/instagram.svg"
+              [svgStyle]="{ 'height.px': 25 }"
+            ></svg-icon>
+          </a>
+        </li>
+      </ul>
+      <img
+        src="./assets/pics/logos/kit.svg"
+        height="60"
+        alt="Karlsruher Institut für Technologie"
+      />
+    </div>
+    <hr />
+    <div class="text-center text-white">
+      Copyright© 2016-2020 linkit e.V. - Alle Rechte vorbehalten.
+    </div>
+  </div>
+</footer>

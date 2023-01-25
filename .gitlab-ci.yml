@@ -1,0 +1,43 @@
+stages:
+  - build_ng_pages
+  - build
+  - adjust_artifact
+  - deploy
+
+build_ng:
+  image: node:latest
+  stage: build
+  script:
+    - npm install
+    - ./node_modules/.bin/ng build  --prod --output-path public
+    - cp public/index.html public/404.html
+  artifacts:
+    paths:
+      - public/
+  cache:
+    key: node-cache
+    paths:
+      - node_modules/
+
+rm_unused_assets:
+  only:
+    - master
+  stage: adjust_artifact
+  script: 
+    - python asset_check.py
+    - mv public public_adj
+    - cp robots.txt public_adj/robots.txt
+  artifacts:
+    paths:
+      - public_adj/
+  
+upload_webspace:
+  only:
+    - master
+  image: ubuntu:18.04
+  stage: deploy
+  before_script:
+  - apt-get update -qy
+  - apt-get install -y lftp
+  script:
+    - lftp -e "open $HOST; user $USERNAME $PASSWORD; mirror -X .* -X .*/ --reverse --verbose --delete public_adj/ ./public; bye"

@@ -1,0 +1,321 @@
+<!--Vollbild Landing Seite-->
+<!-- class=three-quarters-landing, wenn Karten für Bewerbung aktiv -->
+<!-- class=fullscreen-landing, wenn Karten für Bewerbung inaktiv -->
+<div [ngStyle]="{ color: this.siteColor }">
+  <div
+    [style.background-image]="' url(./assets/pics/home/landing.jpg)'"
+    [style.background-color]="this.siteColor"
+    class="three-quarters-landing"
+    title="Hände die ein Smartphone in der Hand halten, auf dem ein Roboterarm zu sehen ist mit Industie 4.0 Icons im Hintergrund."
+  >
+    <div class="container">
+      <div class="landing-headline">
+        <h1 class="text-white">{{ landingHeadline }}</h1>
+        <h2 class="text-white headline-wrapper">
+          <span [ngStyle]="{ backgroundColor: this.siteColor }"
+            >Die Revolution hat begonnen.</span
+          >
+        </h2>
+      </div>
+    </div>
+    <!--
+    <a href="#about" role="button" class="scroll-icon btn btn-light">
+      <svg-icon
+        src="assets/streamline-light/01-interface essential/49-move/scroll-vertical.svg"
+        [svgStyle]="{ 'width.px': 50 }"
+      ></svg-icon>
+    </a> -->
+  </div>
+
+  <!-- News Cards -->
+  <div class="container card-wrapper">
+    <div class="d-flex flex-wrap justify-content-around row">
+      <!--<div
+        class="card news-cards mb-4 col-lg-5 shadow"
+        style="width: 18rem; text-align: center"
+      >
+        <div class="card-body">
+          <h5 class="card-title">Die Bewerbungsphase läuft</h5>
+          <p class="card-text">
+            Du möchtest Teil von linkit werden? <br />Dann bewirb dich noch
+            heute!
+          </p>
+                    <app-count-down> </app-count-down>
+          <a
+            href="https://forms.office.com/Pages/ResponsePage.aspx?id=yGliMOpXRkC-8ujbWPoBUYnH1j9KFARHoAz7JSNVwOhUMUFWVFEwQVNWUFQySTdGREZIRTBKRkE3OC4u"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-primary"
+            [ngStyle]="{
+              backgroundColor: this.siteColor,
+              borderColor: this.siteColor
+            }"
+            >Jetzt bewerben</a
+          >
+
+        </div>
+      </div>-->
+       <div
+        class="card news-cards mb-4 col-lg-5 shadow"
+        style="width: 18rem; text-align: center"
+      >
+        <div class="card-body">
+          <h5 class="card-title">Online-Infoveranstaltung</h5>
+          <p class="card-text">
+            Du willst noch mehr darüber erfahren, was dich bei uns erwartet und 
+            wie du bei uns mitmachen kannst? Dann komm zu unserer virtuellen
+            Infoveranstaltung am <b>04.11.2021 um 19 Uhr!</b>
+            Im Anschluss daran wird Porsche mit einem erstklassigen Vortrag unsere externe Veranstaltungsreihe des Wintersemesters starten.
+          </p>
+          <a
+            href="../../../assets/documents/linkit_Porsche+Infoabend.pdf"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-primary"
+            [ngStyle]="{
+              backgroundColor: this.siteColor,
+              borderColor: this.siteColor
+            }"
+            >Hier geht's zum Event</a
+          >
+        </div>
+      </div> 
+    </div>
+  </div>
+
+  <!--Über Uns mit Infotexten-->
+  <div class="content">
+    <div id="about" class="container text-center my-3">
+      <h2 class="pb-3">Über uns</h2>
+      <div class="d-flex flex-wrap justify-content-around">
+        <div class="p-3">
+          <h3 class="text-white">
+            <span [ngStyle]="{ backgroundColor: this.siteColor }"
+              >Wer wir sind</span
+            >
+          </h3>
+          <p class="paragraph-rect">
+            linkit ist eine fachübergreifende, studentische Hochschulgruppe am
+            Karlsruher Institut für Technologie, die sich mit der digitalen
+            Transformation in der Industrie auseinandersetzt.
+          </p>
+        </div>
+        <div class="p-3">
+          <h3 class="text-white">
+            <span [ngStyle]="{ backgroundColor: this.siteColor }"
+              >Was uns bewegt</span
+            >
+          </h3>
+          <p class="paragraph-rect">
+            Uns verbindet die Begeisterung und Leidenschaft, Probleme mit
+            innovativen Technologien zu lösen. Mit unserer Arbeit wollen wir
+            Studierende befähigen, die Zukunft der Wirtschaft mitzugestalten.
+          </p>
+        </div>
+        <div class="p-3">
+          <h3 class="text-white">
+            <span [ngStyle]="{ backgroundColor: this.siteColor }"
+              >Was wir tun</span
+            >
+          </h3>
+          <p class="paragraph-rect">
+            Mit unseren Veranstaltungen wollen wir uns über das Studium hinaus
+            qualifizieren. Unser Wissen wenden wir in internen Projekten und mit
+            externen Industriepartnern an und erweitern so unsere Kompetenzen.
+          </p>
+        </div>
+      </div>
+      <button
+        [ngStyle]="{
+          backgroundColor: this.siteColor,
+          borderColor: this.siteColor
+        }"
+        routerLink="/ueber-uns"
+        type="button"
+        class="btn btn-primary"
+      >
+        Erfahre mehr über uns
+      </button>
+    </div>
+
+    <!--Polygon Seperator-->
+    <div class="seperator-polygon">
+      <div class="polygon-color">
+        <h2 class="polygon-text text-white text-center container">
+          Werde Teil des Wandels!
+
+        </h2>
+      </div>
+      <div
+        class="polygon-pic"
+        [style.background-image]="'url(./assets/pics/home/industrie40.jpg)'"
+      ></div>
+    </div>
+
+    <!--Infotexte mit Icons-->
+    <div class="container my-3">
+      <div class="info-container d-flex flex-wrap justify-content-around">
+        <svg-icon
+          class="order-md-1 align-self-center p-3"
+          src="./assets/streamline-light/06-business-products/04-strategy/target-center-2.svg"
+          [svgStyle]="{ 'width.px': 120 }"
+        ></svg-icon>
+        <div class="info-wrapper order-md-0 p-3">
+          <h3>Unser Ziel</h3>
+          <p class="info-text">
+            Das Ziel von linkit e.V. ist es, dass sich alle Mitglieder über das
+            Studium hinaus in den Themenfeldern Industrie 4.0 und Data Science
+            durch Vorträge, Workshops, Projekte und vieles mehr, fortbilden und
+            weiterentwickeln. Wir verstehen uns dabei als Enabler, der die
+            Rahmenbedingungen dafür schafft, dass dies stattfinden kann.
+          </p>
+        </div>
+      </div>
+      <div class="info-container d-flex flex-wrap justify-content-around">
+        <svg-icon
+          class="order-md-0 align-self-center p-3"
+          src="./assets/streamline-light/49-building-construction/07-modern architecture/modern-architecture-buildings.svg"
+          [svgStyle]="{ 'width.px': 120 }"
+        ></svg-icon>
+        <div class="info-wrapper order-md-1 p-3">
+          <h3>Unternehmen</h3>
+          <p class="info-text">
+            Sie sind dabei Ihre Produktion zu digitalisieren, haben eine
+            datenbasierte Problemstellung oder arbeiten an interessanten und
+            innovativen Lösungen im Bereich Industrie 4.0? Dann sind Sie bei uns
+            genau richtig! Wir würden uns freuen, die digitale Transformation
+            mit Ihnen gemeinsam voranzutreiben.
+          </p>
+          <button
+            [ngStyle]="{
+              backgroundColor: this.siteColor,
+              borderColor: this.siteColor
+            }"
+            routerLink="/unternehmen"
+            type="button"
+            class="btn btn-primary"
+          >
+            Für Unternehmen
+          </button>
+        </div>
+      </div>
+
+      <div class="info-container d-flex flex-wrap justify-content-around">
+        <svg-icon
+          class="order-md-1 align-self-center p-3"
+          src="./assets/streamline-light/18-avatars/09-geometric-women-people/people-woman-graduate.svg"
+          [svgStyle]="{ 'width.px': 120 }"
+        ></svg-icon>
+        <div class="info-wrapper order-md-0 p-3">
+          <h3>Studierende</h3>
+          <p class="info-text">
+            Du interessierst dich für Data Science, Smart Robotics, Machine
+            Learning und IoT-Anwendungen oder verstehst dich schon als Experte?
+            Dann werde Mitglied und mach bei unseren Veranstaltungen und
+            Projekten mit.
+          </p>
+          <button
+            [ngStyle]="{
+              backgroundColor: this.siteColor,
+              borderColor: this.siteColor
+            }"
+            routerLink="/dein-einstieg"
+            type="button"
+            class="btn btn-primary"
+          >
+            Dein Einstieg
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Trenner Bild -->
+
+    <div
+      class="separator-pic"
+      [style.background-image]="'url(./assets/pics/home/smart_city.jpg)'"
+      title="Eine Stadt bei Nacht aus der Lichter zum Himmel aufsteigen."
+    ></div>
+
+    <!--Schirmhersschaft-->
+    <div class="container">
+      <h2 class="text-center py-4">Schirmherrschaft</h2>
+      <div class="info-container row align-items-center">
+        <div class="col-lg-3 p-2 text-center">
+          <img
+            class="profile-pic"
+            src="assets/pics/home/Jivka_Ovtcharova.jpg"
+            alt="Prof. Dr. Dr.-Ing. Dr. h. c. Jivka Ovtcharova"
+          />
+        </div>
+        <div class="col-lg-1 p-2 text-center"></div>
+        <div class="col-lg-8 p-2">
+          <p class="info-text">
+            "Industrie 4.0 braucht Vordenker und Treiber. Die Zeit zu handeln
+            ist jetzt! Als allererste Hochschulgruppe hat linkit die Weichen für
+            ein grundlegend neues Verständnis für digitale Bildung,
+            Qualifikation und Innovation im Umgang mit Industrie 4.0 gestellt.
+            Wissen in praktische Fähigkeiten schnell umsetzen und dabei den
+            Blick für das große Ganze zu behalten ist ein Markenzeichen von
+            linkit. Als Schirmherrin unterstütze ich diese einzigartige
+            studentische Initiative voll und ganz und wünsche weiterhin viel
+            Begeisterung und Erfolg bei der Mitgestaltung der Arbeitswelt der
+            Zukunft."
+          </p>
+          <p>
+            Prof. Dr. Dr.-Ing. Dr. h.c. Jivka Ovtcharova (Professorin und
+            Institutsleiterin, KIT)
+          </p>
+        </div>
+      </div>
+
+      <div class="info-container row align-items-center">
+        <div class="col-lg-3 p-2 text-center">
+          <img
+            class="profile-pic"
+            src="assets/pics/home/Christian_Lindner.jpg"
+            alt="Christian Lindner - Bundesvorsitzender der FDP"
+          />
+        </div>
+        <div class="col-lg-1 p-2 text-center"></div>
+        <div class="col-lg-8 p-2">
+          <p class="info-text">
+            "linkit ist die erste Hochschulgruppe in Deutschland, die sich
+            allein dem Thema Industrie 4.0 widmet. Damit rückt ein zentrales
+            Zukunftsthema für unser Land und den Standort Deutschland in den
+            Mittelpunkt. Die verschiedenen Partner aus Industrie und Forschung
+            sowie die bereits angestoßenen Veranstaltungen und Projekte sind
+            innovativ und vielversprechend. Diesen Pioniergeist unterstütze ich
+            als Schirmherr sehr gerne und wünsche dieser noch jungen
+            studentischen Initiative viel Erfolg."
+          </p>
+          <p>Christian Lindner (Bundesvorsitzender der FDP)</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Trenner Bild -->
+
+    <div
+      class="separator-pic my-5"
+      [style.background-image]="'url(./assets/pics/home/analysis.jpg)'"
+      title="Menschen stehen an einem Whiteborad und machen zusammen Brainstorming. Einer der Personen schreibt an das Whiteborad."
+    ></div>
+
+    <!--<img src="../../../assets/partner_logos/artiminds.png" width={100} height={100}/>-->
+    <div class="container py-3">
+      <h2 class="text-center pb-5">Kooperationspartner</h2>
+      <div class="d-flex flex-wrap justify-content-center pb-5">
+        <div *ngFor="let partner of partners">
+          <a href="{{ partner.link }}" target="_blank" rel="noopener">
+            <img
+            class="logo-wall"
+            src="{{ partner.path }}"
+            alt="{{ partner.name }}"
+          />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

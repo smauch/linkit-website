@@ -1,0 +1,383 @@
+<!--Vollbild Landing Seite-->
+<div [ngStyle]="{ color: this.siteColor }">
+  <div
+    [ngStyle]="{ 'background-position': '80% center' }"
+    [style.background-image]="'url(./assets/pics/unternehmen/landing.jpg)'"
+    [style.background-color]="this.siteColor"
+    class="fullscreen-landing"
+  >
+    <div class="container">
+      <div class="landing-headline">
+        <h1 class="text-white">Connect with us</h1>
+        <h2 class="text-white headline-wrapper">
+          <span [ngStyle]="{ backgroundColor: this.siteColor }"
+            >Sie möchten digitale Talente und Zunkunftsgestalter
+            kennenlernen?</span
+          >
+        </h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+    <!--Infotexte mit Bild RL -->
+    <div class="container">
+      <!--Infotext mit Bild-->
+      <div class="d-flex flex-wrap justify-content-around">
+        <div class="row my-3 align-items-center">
+          <div class="col-lg-7 p-2">
+            <h3>Verlinken Sie sich mit uns</h3>
+            <p class="info-text">
+              Sie möchten interessierte und engagierte Studierenden kennenlernen
+              und sich zu Industrie 4.0 austauschen? <br />
+              Dann sind Sie bei uns genau richtig!
+              <br /><br />
+              Industrie 4.0 ist vielschichtig – genau wie wir. Mit unserem Team
+              aus angehenden Wirtschaftsingenieuren, Maschinenbauern,
+              Informatikern/Informationswirten und vielen weiteren Disziplinen
+              möchten wir mit Ihnen die Zukunft in der Industrie gestalten.
+              <br /><br />
+              Wir freuen uns sehr, wenn Sie mit uns eine Veranstaltung
+              durchführen möchten. Hierbei können Sie Ihr Wissen und Ihre
+              Erfahrungen mit uns teilen, durch spannende Diskussionen neue
+              Erkenntnisse gewinnen und mit motivierten und engagierten
+              Studierenden in Kontakt kommen.
+            </p>
+          </div>
+          <div class="col-lg-1 p-2 text-center"></div>
+
+          <div class="col-lg-4 p-2 text-center">
+            <img
+              class="profile-pic"
+              src="assets\pics\ueber-uns\RL\Elif_Oezcelik.jpg"
+              alt="Elif Oezcelik"
+            />
+            <h5 class="pt-3">Elif Özcelik</h5>
+            <p>
+              Ressortleiterin Akquise
+            </p>
+            <button
+              type="button"
+              class="btn btn-link size"
+              onclick="location.href='mailto:akquise@linkit.tech'"
+              data-toggle="tooltip"
+              data-placement="bottom"
+              title="Schreibe eine E-Mail"
+            >
+              <svg-icon
+                class="align-self-center p-2"
+                src="./assets/streamline-light/19-emails/07-email-actions/email-action-unread.svg"
+                [svgStyle]="{ 'width.px': 25 }"
+              >
+              </svg-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Polygon Seperator-->
+    <div class="seperator-polygon">
+      <div class="polygon-color">
+        <h2 class="polygon-text text-white text-center container">
+          Ihr Unternehmen bei linkit
+        </h2>
+      </div>
+      <div
+        class="polygon-pic"
+        [ngStyle]="{ 'background-position': 'center 35%' }"
+        [style.background-image]="
+          'url(./assets/pics/unternehmen/unternehmen_bei_linkit.jpg)'
+        "
+        title="Personen die an Tischen sitzen und einen Vortrag hören."
+      ></div>
+    </div>
+
+    <!--Infotexte mit Icons-->
+    <div class="container my-3">
+      <div class="info-container d-flex flex-wrap justify-content-around">
+        <svg-icon
+          class="order-md-1 align-self-center p-3"
+          src="./assets/streamline-light/04-programing-apps-websites/01-programing/programming-team-chat.svg"
+          [svgStyle]="{ 'width.px': 120 }"
+        ></svg-icon>
+        <div class="info-wrapper order-md-0 p-3">
+          <h3>Workshops</h3>
+          <p class="info-text">
+            Kreative Lösungen erfordern kluge Ideen. Gestalten Sie mit uns die
+            Zukunft der Industrie und helfen Sie uns, unsere Ideen
+            weiterzuentwickeln und neue Denkanstöße zu generieren. Wir möchten
+            mit Ihnen zusammen Antworten auf echte Problemstellungen aus der
+            Praxis finden und die industrielle Evolution vorantreiben.
+          </p>
+        </div>
+      </div>
+
+      <div class="info-container d-flex flex-wrap justify-content-around">
+        <svg-icon
+          class="order-md-0 align-self-center p-3"
+          src="./assets/streamline-light/07-work-office-companies/11-presentations/presentation-audience.svg"
+          [svgStyle]="{ 'width.px': 120 }"
+        ></svg-icon>
+        <div class="info-wrapper order-md-1 p-3">
+          <h3>Fachvorträge</h3>
+          <p class="info-text">
+            Die Digitalisierung der Industrie schreitet zunehmend voran. Gerne
+            möchten wir mehr darüber erfahren, wie Sie damit umgehen. Ein
+            Fachvortrag bei uns ist eine ausgezeichnete Gelegenheit, über
+            aktuelle Entwicklungen aus der Industrie und Wissenschaft zu
+            informieren und den Wissensaustausch zu fördern.
+          </p>
+        </div>
+      </div>
+
+      <div class="info-container d-flex flex-wrap justify-content-around">
+        <svg-icon
+          class="order-md-1 align-self-center p-3"
+          src="./assets/streamline-light/47-transportation/05-cars/car-retro-luggage.svg"
+          [svgStyle]="{ 'width.px': 120 }"
+        ></svg-icon>
+        <div class="info-wrapper order-md-0 p-3">
+          <h3>Exkursionen</h3>
+          <p class="info-text">
+            Die intelligente Vernetzung in der Fabrik der Zukunft eröffnet ganz
+            neue Potenziale. Präsentieren Sie uns vor Ort, welche Fortschritte
+            Sie bereits bei der Umsetzung von cyber-physischen Systemen gemacht
+            haben. Über die Einladung zu einer Exkursion würden wir uns sehr
+            freuen.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--Polygon Seperator-->
+    <div class="seperator-polygon">
+      <div class="polygon-color">
+        <h2 class="polygon-text text-white text-center container">
+          linkit in ihrem Unternehmen
+        </h2>
+      </div>
+      <div
+        class="polygon-pic"
+        [ngStyle]="{ 'background-position': 'center 20%' }"
+        [style.background-image]="
+          'url(./assets/pics/unternehmen/linkit_bei_unternehmen.jpg)'
+        "
+        title="Vier Personen die zusammen an einem Projekt arbeiten."
+      ></div>
+    </div>
+
+    <div class="container my-3">
+      <div class="info-container d-flex flex-wrap justify-content-around">
+        <svg-icon
+          class="order-md-1 align-self-center p-3"
+          src="./assets/streamline-light/01-interface essential/17-stats/graph-stats-ascend.svg"
+          [svgStyle]="{ 'width.px': 120 }"
+        ></svg-icon>
+        <div class="info-wrapper order-md-0 p-3">
+          <h3>Gemeinsam wachsen</h3>
+          <p class="info-text">
+            Sie suchen nach einem hoch-motivierten, interdisziplinären Team, das
+            gemeinsam mit Ihnen an den individuellen Herausforderungen Ihres
+            Unternehmens rund um das Thema Digitalisierung arbeitet? Dann sind
+            Sie bei uns an der richtigen Adresse!
+            <br />
+            Im Rahmen unserer Industrieprojekte entwickeln Studierende
+            unterschiedlichster Fachrichtungen maßgeschneiderte Lösungen, bei
+            denen nur eines im Vordergrund steht: Ihnen einen Mehrwert zu
+            bieten.
+          </p>
+        </div>
+      </div>
+
+      <div class="info-container d-flex flex-wrap justify-content-around">
+        <svg-icon
+          class="order-md-0 align-self-center p-3"
+          src="./assets/streamline-light/02-technology/01-artificial-intelligence/brain-1.svg"
+          [svgStyle]="{ 'width.px': 120 }"
+        ></svg-icon>
+        <div class="info-wrapper order-md-1 p-3">
+          <h3>Unser Leistungsspektrum umfasst</h3>
+
+          <ul class="info-text justify-content-around pl-3">
+            <li>
+              Machine Learning und Big Data Analytics in der Produktion
+            </li>
+            <li>
+              Digitalisierungsstrategien und Arbeit 4.0
+            </li>
+            <li>
+              Prozess- und Reifegradanalysen
+            </li>
+          </ul>
+          <button
+            [ngStyle]="{
+              backgroundColor: this.siteColor,
+              borderColor: this.siteColor
+            }"
+            routerLink="/referenzen"
+            type="button"
+            class="btn btn-primary"
+          >
+            Unsere Referenzen
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Trenner Bild -->
+
+    <div
+      class="separator-pic my-5"
+      [style.background-image]="
+        'url(./assets/pics/unternehmen/neural_network.jpg)'
+      "
+      title="Ein Netzwerk mit Punkten und Strichen. Im Hintergrund sind Code-Zeilen. "
+    ></div>
+
+    <div class="container">
+      <h2 class="text-center">Projektablauf</h2>
+      <div class="my-5" id="accordion">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-link"
+                data-toggle="collapse"
+                data-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                1. Erstkontakt
+              </button>
+            </h5>
+          </div>
+
+          <div
+            id="collapseOne"
+            class="collapse show"
+            aria-labelledby="headingOne"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              In persönlichen Gesprächen haben Sie die Möglichkeit, uns
+              kennenzulernen und einen ersten Eindruck in unsere Arbeitsweise zu
+              erhalten. Der Informationsaustausch ist die wichtigste Grundlage
+              einer erfolgreichen Zusammenarbeit.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-link collapsed"
+                data-toggle="collapse"
+                data-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                2. Projektbesetzung
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseTwo"
+            class="collapse"
+            aria-labelledby="headingTwo"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              Anschließend wird entsprechend der individuellen
+              Projektanforderungen ein Team besetzt, das anhand fachlicher
+              Kompetenz, Engagement und Projekterfahrung zusammengestellt wird.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-link collapsed"
+                data-toggle="collapse"
+                data-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                3. Angebots- & Vertragsgestaltung
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseThree"
+            class="collapse"
+            aria-labelledby="headingThree"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              Nachdem das Projektteam besetzt ist, erarbeiten wir ein
+              individuell auf Ihr Projekt zugeschnittenes Angebot, auf dessen
+              Basis dann die vertragliche Ausgestaltung stattfindet.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-link collapsed"
+                data-toggle="collapse"
+                data-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                4. Projektdurchführung
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseFour"
+            class="collapse"
+            aria-labelledby="headingThree"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              Während der Projektdurchführung ist der Projektleiter Ihr
+              Ansprechpartner und informiert Sie über den aktuellen Stand der
+              Projektarbeit und die erreichten Fortschritte.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-link collapsed"
+                data-toggle="collapse"
+                data-target="#collapseFive"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                5. Projektabschluss
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseFive"
+            class="collapse"
+            aria-labelledby="headingThree"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              In einem Abschlusstermin werden Ihnen die Projektergebnisse
+              präsentiert und alle wichtigen Dokumente übergeben. Auch nach
+              Abschluss des Projektes verbleibt der Projektleiter für Sie als
+              zentraler Ansprechpartner, falls Ihrerseits das Interesse an
+              möglichen Folgeprojekte besteht.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

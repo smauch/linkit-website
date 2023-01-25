@@ -1,0 +1,863 @@
+<div [ngStyle]="{ color: this.siteColor }">
+  <div
+    [style.background-image]="'url(./assets/pics/ueber-uns/landing.jpg)'"
+    [style.background-color]="this.siteColor"
+    class="fullscreen-landing"
+    title="Gruppenfoto der Hochschulgruppe linkit e.V.. Eine Gruppe von Menschen steht vor dem Karlsruher Schloss."
+  >
+    <div class="container">
+      <div class="landing-headline">
+        <h1 class="text-white">About us</h1>
+        <h2 class="text-white headline-wrapper">
+          <span [ngStyle]="{ backgroundColor: this.siteColor }"
+            >Erste Industrie 4.0 Hochschulgruppe Deutschlands</span
+          >
+        </h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+    <!-- Infotextblock mit Überschrift -->
+    <div id="about" class="container text-center my-3">
+      <h2>Unsere Themen</h2>
+      <div class="d-flex flex-wrap justify-content-around pt-5">
+        <div class="p-2">
+          <h3 class="text-white">
+            <span [ngStyle]="{ backgroundColor: this.siteColor }"
+              >Data Science</span
+            >
+          </h3>
+          <p class="paragraph-rect">
+            Daten visualisieren, verstehen und Hypothesen prüfen. Business
+            Knowledge generieren und daraus Mehrwert schaffen.
+          </p>
+        </div>
+        <div class="p-2">
+          <h3 class="text-white">
+            <span [ngStyle]="{ backgroundColor: this.siteColor }"
+              >Smart Robotics</span
+            >
+          </h3>
+          <p class="paragraph-rect">
+            Pionierarbeit mit modernen Technologien der Robotik in innovativen
+            Anwendungsfeldern leisten.
+          </p>
+        </div>
+        <div class="p-2">
+          <h3 class="text-white">
+            <span [ngStyle]="{ backgroundColor: this.siteColor }"
+              >Machine Learning</span
+            >
+          </h3>
+          <p class="paragraph-rect">
+            Modelle zur klassifikation von Objekten in Sekundenbruchteilen, zur
+            exakten Vorhersage von Zielwerten und zum Entdecken von Strukturen
+            in Daten.
+          </p>
+        </div>
+        <div class="p-2">
+          <h3 class="text-white">
+            <span [ngStyle]="{ backgroundColor: this.siteColor }">IoT</span>
+          </h3>
+          <p class="paragraph-rect">
+            Das “Allesnetz”, die unbegrenze Vernetzung von physischen und
+            virtuellen Geräten, beherrschbar und nutzbar machen.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--Polygon Seperator-->
+    <div class="seperator-polygon">
+      <div class="polygon-color">
+        <h2 class="polygon-text text-white text-center container">
+          Unser Angebot für Studierende
+        </h2>
+      </div>
+      <div
+        class="polygon-pic"
+        [ngStyle]="{ 'background-position': 'center 20%' }"
+        [style.background-image]="'url(./assets/pics/ueber-uns/angebot.jpg)'"
+        title="Personen sitzen an einem langen Tisch zusammen und unterhalten sich. "
+      ></div>
+    </div>
+
+    <!--Infotexte mit Icons-->
+    <div class="container my-3">
+      <div class="info-container d-flex flex-wrap justify-content-around">
+        <svg-icon
+          class="order-md-1 align-self-center p-3"
+          src="./assets/streamline-light/07-work-office-companies/02-meetings-collaboration/presentation.svg"
+          [svgStyle]="{ 'width.px': 120 }"
+        ></svg-icon>
+        <div class="info-wrapper order-md-0 p-3">
+          <h3>Veranstaltungen mit Unternehmen</h3>
+          <p class="info-text pb-3">
+            In unseren Workshops, Vortägen und Exkursionen erleben wir zusammen
+            mit verschiedenen Industriegrößen Industrie 4.0 und Data Science
+            hautnah kennen.
+          </p>
+
+          <!-- <button
+            [ngStyle]="{
+              backgroundColor: this.siteColor,
+              borderColor: this.siteColor
+            }"
+            routerLink="/blog"
+            type="button"
+            class="btn btn-primary"
+          >
+            Blog
+          </button> -->
+        </div>
+      </div>
+
+      <div class="info-container d-flex flex-wrap justify-content-around">
+        <svg-icon
+          class="order-md-0 align-self-center p-3"
+          src="./assets/streamline-light/07-work-office-companies/11-presentations/presentation-statistics.svg"
+          [svgStyle]="{ 'width.px': 120 }"
+        ></svg-icon>
+        <div class="info-wrapper order-md-1 p-3">
+          <h3>Schulungen</h3>
+          <p class="info-text">
+            Durch das breite Spektrum an Studiengängen, Erfahrungen und
+            Kontakten findest Du in unserem Team optimale Möglichkeiten, dich
+            über dein Studium hinaus weiterzubilden und deinen Start ins
+            Berufsleben zu gestalten
+          </p>
+        </div>
+      </div>
+
+      <div class="info-container d-flex flex-wrap justify-content-around">
+        <svg-icon
+          class="order-md-1 align-self-center p-3"
+          src="./assets/streamline-light/02-technology/05-drones/drone-remote.svg"
+          [svgStyle]="{ 'width.px': 120 }"
+        ></svg-icon>
+        <div class="info-wrapper order-md-0 p-3">
+          <h3>Projekte</h3>
+          <p class="info-text pb-3">
+            In internen und externen Projekten entwickeln wir uns weiter und
+            wenden das gewonnene Wissen gewinnbringend an. Durch die Vielzahl an
+            Forschungs- und Industriepartnern gibt es auch hier ein breites
+            Spektrum an Themen.
+          </p>
+          <button
+            [ngStyle]="{
+              backgroundColor: this.siteColor,
+              borderColor: this.siteColor
+            }"
+            routerLink="/referenzen"
+            type="button"
+            class="btn btn-primary"
+          >
+            Referenzen
+          </button>
+        </div>
+      </div>
+
+      <div class="info-container d-flex flex-wrap justify-content-around">
+        <svg-icon
+          class="order-md-0 align-self-center p-3"
+          src="./assets/streamline-light/44-entertainment-event-hobbies/04-party/party-beer-cheers.svg"
+          [svgStyle]="{ 'width.px': 120 }"
+        ></svg-icon>
+        <div class="info-wrapper order-md-1 p-3">
+          <h3>Teamevents</h3>
+          <p class="info-text pb-3">
+            Ob Hoch in den Lüften im Klettergarten, oder geerdet am Boden beim
+            Grillen, unsere Teamevents warten immer mit vielseitigen Aktivitäten
+            auf unsere Mitglieder. Dabei sollen die Events helfen, um zum einem
+            ressortübergreifend in Kontakt zu treten, sowie neuen Mitgliedern
+            den Einstieg in die Hochschulgruppe zu erleichtern und zum anderen
+            die Zusammenarbeit und Kommunikation zwischen den einzelnen Resorts
+            zu verbessern.
+          </p>
+          <!-- <button
+            [ngStyle]="{
+              backgroundColor: this.siteColor,
+              borderColor: this.siteColor
+            }"
+            routerLink="/blog"
+            type="button"
+            class="btn btn-primary"
+          >
+            Blog
+          </button> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Trenner Bild -->
+
+    <div
+      class="separator-pic my-5"
+      [ngStyle]="{ 'background-position': 'center 25%' }"
+      [style.background-image]="'url(./assets/pics/ueber-uns/leitung_hsg.jpg)'"
+      title="Sieben Personen sitzen an einem Gruppentisch und arbeiten zusammen."
+    ></div>
+
+    <!-- Leitung der Hochschulgruppe Bilder und Beschreibungen-->
+
+    <div class="container">
+      <h2 class="text-center pb-5">Leitung der Hochschulgruppe</h2>
+
+      <!-- Vorstand -->
+      <div class="row my-3 d-flex flex-wrap-reverse">
+        <div class="d-flex flex-wrap col-lg-6">
+          <div class="col-lg-6 p-2 text-center">
+            <img
+              class="profile-pic"
+              src="assets/pics/ueber-uns/RL/Marina_Baucks.jpg"
+              alt="Marina Baucks"
+            />
+            <h3 class="text-white pt-3">
+              <span [ngStyle]="{ backgroundColor: this.siteColor }">Marina Baucks</span>
+            </h3>
+
+            <p >1. Vorstand</p>
+
+            <button
+              type="button"
+              class="btn btn-link size"
+              onclick="location.href='mailto:marina.baucks@linkit.tech'"
+              data-toggle="tooltip"
+              data-placement="bottom"
+              title="Schreibe eine E-Mail"
+            >
+              <svg-icon
+                class="p-2"
+                src="./assets/streamline-light/19-emails/07-email-actions/email-action-unread.svg"
+                [svgStyle]="{ 'width.px': 25, 'padding-top.px': 6 }"
+              >
+              </svg-icon>
+            </button>
+            <button
+              type="button"
+              class="btn btn-link size align-self-center"
+              data-toggle="tooltip"
+              data-placement="bottom"
+              title="LinkedIn Profil"
+
+              onclick="location.href='https://www.linkedin.com/in/marina-baucks-938423199/'"
+            >
+              <svg-icon
+                class="p-2"
+                src="./assets/streamline-light/53-logos/07-professional networks/professional-network-linkedin.svg"
+                [svgStyle]="{ 'width.px': 25 }"
+              ></svg-icon>
+            </button>
+          </div>
+
+          <div class="col-lg-6 p-2 text-center">
+            <img
+              class="profile-pic"
+              src="assets/pics/ueber-uns/RL/Jakob_Ketterer.jpg"
+              alt="Jakob Ketterer"
+            />
+            <h3 class="text-white pt-3" >
+              <span [ngStyle]="{ backgroundColor: this.siteColor }">Jakob Ketterer</span>
+            </h3>
+
+            <p>2. Vorstand</p>
+            <button
+              type="button"
+              class="btn btn-link size"
+              onclick="location.href='mailto:jakob.ketterer@linkit.tech'"
+              data-toggle="tooltip"
+              data-placement="bottom"
+              title="Schreibe eine E-Mail"
+            >
+              <svg-icon
+                class="align-self-center p-2"
+                src="./assets/streamline-light/19-emails/07-email-actions/email-action-unread.svg"
+                [svgStyle]="{ 'width.px': 25, 'padding-top.px': 6 }"
+              >
+              </svg-icon>
+            </button>
+            <button
+              type="button"
+              class="btn btn-link size"
+              data-toggle="tooltip"
+              data-placement="bottom"
+              title="LinkedIn Profil"
+              onclick="location.href='https://www.linkedin.com/in/jakob-ketterer/'"
+            >
+              <svg-icon
+                class="align-self-center p-2"
+                src="./assets/streamline-light/53-logos/07-professional networks/professional-network-linkedin.svg"
+                [svgStyle]="{ 'width.px': 25 }"
+              ></svg-icon>
+            </button>
+          </div>
+        </div>
+        <div class="col-lg-6 p-2">
+          <h3 class="text-center text-lg-left">Vorstand</h3>
+          <p class="info-text">
+            Der Vorstand verantwortet die strategische Ausrichtung von linkit.
+            Dazu übernimmt er die zentrale Koordination der Ressortaktivitäten,
+            um alle Ressorts auf einen strategischen Kurs einzustimmen und einen
+            ressort-übergreifenden Informationsaustausch zu ermöglichen. Darüber
+            hinaus verantwortet der Vorstand die kontinuierliche
+            Weiterentwicklung von linkit und übernimmt die Vertretung und
+            Repräsentation von linkit nach außen.
+          </p>
+        </div>
+      </div>
+
+      <!-- IT -->
+      <div class="row my-3 align-items-center d-flex flex-wrap">
+        <div class="col-lg-6 p-2">
+          <h3 class="text-center text-lg-left">IT</h3>
+          <p class="info-text">
+            Das Ressort IT kümmert sich vornehmlich um alle Themen rund um die
+            technische Infrastruktur (z.B. Verwaltung der
+            Kollaborationsplattform Podio, Dateimanagement, E-Mail,
+            Benutzerverwaltung, First Level Support, etc.) und ist zudem für die
+            Weiterentwicklung der linkit-Homepage zuständig. Weiterhin
+            verantwortet das Ressort die Organisation von internen
+            Veranstaltungen zur Vermittlung von Software- und
+            Programmierkenntnissen.
+          </p>
+        </div>
+        <div class="d-flex flex-wrap col-lg-6">
+          <div class="col-lg-6 p-2 text-center">
+            <img class="profile-pic" src="assets/pics/ueber-uns/RL/Kathrin_Fausel.jpg" alt="Kathrin Fausel" />
+
+            <h3 class="text-white pt-3">
+              <span [ngStyle]="{ backgroundColor: this.siteColor }">Kathrin Fausel</span>
+            </h3>
+            <p>Ressortleiterin IT</p>
+
+            <button type="button" class="btn btn-link size" onclick="location.href='mailto:kathrin.fausel@linkit.tech'"
+              data-toggle="tooltip" data-placement="bottom" title="Schreibe eine E-Mail">
+              <svg-icon class="p-2" src="./assets/streamline-light/19-emails/07-email-actions/email-action-unread.svg"
+                [svgStyle]="{ 'width.px': 25, 'padding-top.px': 6 }">
+              </svg-icon>
+            </button>
+            <button type="button" class="btn btn-link size align-self-center" data-toggle="tooltip" data-placement="bottom"
+              title="LinkedIn Profil" onclick="location.href='https://www.linkedin.com/in/kathrin-fausel-2b9ab8182/'">
+              <svg-icon class="p-2"
+                src="./assets/streamline-light/53-logos/07-professional networks/professional-network-linkedin.svg"
+                [svgStyle]="{ 'width.px': 25 }"></svg-icon>
+            </button>
+          </div>
+          <div class="col-lg-6 p-2 text-center">
+            <img class="profile-pic" src="assets/pics/ueber-uns/RL/Samuel_Mauch.jpg" alt="Samuel Mauch" />
+
+            <h3 class="text-white pt-3">
+              <span [ngStyle]="{ backgroundColor: this.siteColor }">Samuel Mauch</span>
+            </h3>
+            <p>Ressortleiter IT</p>
+            <button type="button" class="btn btn-link size" onclick="location.href='mailto:samuel.mauch@linkit.tech'"
+              data-toggle="tooltip" data-placement="bottom" title="Schreibe eine E-Mail">
+              <svg-icon class="align-self-center p-2"
+                src="./assets/streamline-light/19-emails/07-email-actions/email-action-unread.svg"
+                [svgStyle]="{ 'width.px': 25, 'padding-top.px': 6 }">
+              </svg-icon>
+            </button>
+            <button type="button" class="btn btn-link size" data-toggle="tooltip" data-placement="bottom"
+              title="LinkedIn Profil" onclick="location.href='https://www.linkedin.com/in/samuel-mauch-3308ab165/'">
+              <svg-icon class="align-self-center p-2"
+                src="./assets/streamline-light/53-logos/07-professional networks/professional-network-linkedin.svg"
+                [svgStyle]="{ 'width.px': 25 }"></svg-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Finanzen -->
+      <div class="row my-3 align-items-center d-flex flex-wrap-reverse">
+        <div class="col-lg-3 p-2 text-center">
+          <img
+            class="profile-pic"
+            src="assets/pics/ueber-uns/RL/Steffen_Schuette-Drolshagen.jpg"
+            alt="Steffen Schütte-Drolshagen"
+          />
+          <h3 class="text-white pt-3">
+            <span [ngStyle]="{ backgroundColor: this.siteColor }">Steffen Schütte-Drolshagen</span>
+          </h3>
+
+          <p>Ressortleiter Finanzen</p>
+          <button
+            type="button"
+            class="btn btn-link size"
+            onclick="location.href='mailto:steffen.schuette-drolshagen@linkit.tech'"
+            data-toggle="tooltip"
+            data-placement="bottom"
+            title="Schreibe eine E-Mail"
+          >
+            <svg-icon
+              class="align-self-center p-2"
+              src="./assets/streamline-light/19-emails/07-email-actions/email-action-unread.svg"
+              [svgStyle]="{ 'width.px': 25, 'padding-top.px': 6 }"
+            >
+            </svg-icon>
+          </button>
+          <button type="button" class="btn btn-link size" data-toggle="tooltip" data-placement="bottom" title="LinkedIn Profil"
+            onclick="location.href='https://www.linkedin.com/in/steffen-sch%C3%BCtte-drolshagen-b991621ab/'">
+            <svg-icon class="align-self-center p-2"
+              src="./assets/streamline-light/53-logos/07-professional networks/professional-network-linkedin.svg"
+              [svgStyle]="{ 'width.px': 25 }"></svg-icon>
+          </button>
+        </div>
+        <div class="col-lg-3 p-2 text-center"></div>
+        <div class="col-lg-6 p-2">
+          <h3 class="text-center text-lg-left">Finanzen</h3>
+          <p class="info-text">
+            Die Hauptaufgabe des Ressorts Finanzen ist die Abwicklung der
+            Geschäftsvorfälle von linkit. Auf Basis einer transparenten,
+            übersichtlichen Buchführung wird unsere Liquidität gesichert, sodass
+            Vereinsaktivitäten finanziell unterstützt werden können. Zudem
+            befasst sich das Ressort mit den gesetzmäßigen Pflichten gegenüber
+            den Behörden und Dritten. Darüber hinaus fallen Versicherungs- und
+            Rechtsschutzaspekte ebenfalls in das Aufgabengebiet des Ressorts.
+          </p>
+        </div>
+      </div>
+
+      <!-- Akquise -->
+      <div class="row my-3 align-items-center d-flex flex-wrap">
+        <div class="col-lg-6 p-2">
+          <h3 class="text-center text-lg-left">Akquise</h3>
+          <p class="info-text">
+            Das übergeordnete Ziel des Ressorts Akquise ist der Aufbau und die
+            Pflege eines Netzwerks aus Partnern des Industriesektors, der
+            Forschung und Studierenden. Dazu zählen neben der reinen Akquise von
+            Partnern auch die Organisation und Durchführung verschiedener
+            Veranstaltungen wie Fachvorträge, Workshops, Projekten und
+            Werksführungen. Das dadurch erlangte Wissen soll den Mitgliedern
+            helfen, Projekte auf dem Gebiet Industrie 4.0 durchzuführen und
+            Firmen durch beratende Tätigkeiten zu unterstützen.
+          </p>
+        </div>
+        <div class="col-lg-3 p-2 text-center">
+          <img
+            class="profile-pic"
+            src="assets/pics/ueber-uns/RL/Elif_Oezcelik.jpg"
+            alt=": Elif Oezcelik"
+          />
+
+          <h3 class="text-white pt-3">
+            <span [ngStyle]="{ backgroundColor: this.siteColor }">Elif Özcelik</span>
+          </h3>
+          <p>Ressortleiterin Akquise</p>
+          <button
+            type="button"
+            class="btn btn-link size"
+            onclick="location.href='mailto:elif.oezcelik@linkit.tech'"
+            data-toggle="tooltip"
+            data-placement="bottom"
+            title="Schreibe eine E-Mail"
+          >
+            <svg-icon
+              class="align-self-center p-2"
+              src="./assets/streamline-light/19-emails/07-email-actions/email-action-unread.svg"
+              [svgStyle]="{ 'width.px': 25, 'padding-top.px': 6 }"
+            >
+            </svg-icon>
+          </button>
+          <button
+            type="button"
+            class="btn btn-link size"
+            onclick="location.href='https://www.linkedin.com/in/elif-%C3%B6zcelik-365b27196/'"
+            data-toggle="tooltip"
+            data-placement="bottom"
+            title="LinkedIn Profil"
+          >
+            <svg-icon
+              class="align-self-center p-2"
+              src="./assets/streamline-light/53-logos/07-professional networks/professional-network-linkedin.svg"
+              [svgStyle]="{ 'width.px': 25 }"
+            ></svg-icon>
+          </button>
+        </div>
+        <div class="col-lg-3 p-2 text-center">
+          <img
+            class="profile-pic"
+            src="assets/pics/ueber-uns/RL/Timon_Loy.jpg"
+            alt="Timon Loy"
+          />
+
+          <h3 class="text-white pt-3">
+            <span [ngStyle]="{ backgroundColor: this.siteColor }">Timon Loy</span>
+          </h3>
+          <p>Ressortleiter Akquise</p>
+          <button
+            type="button"
+            class="btn btn-link size"
+            onclick="location.href='mailto:Timon.Loy@linkit.tech'"
+            data-toggle="tooltip"
+            data-placement="bottom"
+            title="Schreibe eine E-Mail"
+          >
+            <svg-icon
+              class="align-self-center p-2"
+              src="./assets/streamline-light/19-emails/07-email-actions/email-action-unread.svg"
+              [svgStyle]="{ 'width.px': 25, 'padding-top.px': 6 }"
+            >
+            </svg-icon>
+          </button>
+          <button
+            type="button"
+            class="btn btn-link size"
+            onclick="location.href='https://www.linkedin.com/in/timon-loy-5ba222177/'"
+            data-toggle="tooltip"
+            data-placement="bottom"
+            title="LinkedIn Profil"
+          >
+            <svg-icon
+              class="align-self-center p-2"
+              src="./assets/streamline-light/53-logos/07-professional networks/professional-network-linkedin.svg"
+              [svgStyle]="{ 'width.px': 25 }"
+            ></svg-icon>
+          </button>
+        </div>
+      </div>
+
+      <!-- Marketing-->
+      <div class="row my-3 align-items-center d-flex flex-wrap-reverse">
+        <div class="col-lg-3 p-2 text-center">
+          <img
+            class="profile-pic"
+            src="assets/pics/ueber-uns/RL/Kai_Glatthaar.jpg"
+            alt="Kai Glatthaar "
+          />
+          <h3 class="text-white pt-3">
+            <span [ngStyle]="{ backgroundColor: this.siteColor }">Kai Glatthaar</span>
+          </h3>
+
+          <p>Ressortleiter Marketing</p>
+          <button
+            type="button"
+            class="btn btn-link size"
+            onclick="location.href='mailto:kai.glatthaar@linkit.tech'"
+            data-toggle="tooltip"
+            data-placement="bottom"
+            title="Schreibe eine E-Mail"
+          >
+            <svg-icon
+              class="align-self-center p-2"
+              src="./assets/streamline-light/19-emails/07-email-actions/email-action-unread.svg"
+              [svgStyle]="{ 'width.px': 25, 'padding-top.px': 6 }"
+            >
+            </svg-icon></button
+          >
+        </div>
+        <div class="col-lg-3 p-2 text-center"></div>
+        <div class="col-lg-6 p-2">
+          <h3 class="text-center text-lg-left">Marketing</h3>
+          <p class="info-text">
+            Das Ressort Marketing ist für ein einheitliches äußeres
+            Erscheinungsbild von linkit verantwortlich. Hierzu gehört
+            insbesondere die Pflege des Online-Marketings, Erstellung von
+            Printmedien, die Marketing-Events sowie die Erstellung unseres
+            Newsletters. Wir haben uns zum Ziel gesetzt, alle Interessenten
+            permanent auf dem Laufenden zu halten und die Reichweite sowie die
+            Bekanntheit von linkit zu erhöhen.
+          </p>
+        </div>
+      </div>
+
+      <!-- HR -->
+      <div class="row my-3 align-items-center d-flex flex-wrap">
+        <div class="col-lg-6 p-2">
+          <h3 class="text-center text-lg-left">HR</h3>
+          <p class="info-text">
+            Das Ziel des Ressorts HR ist es, die Zufriedenheit der Mitglieder
+            und das Zugehörigkeitsgefühl zu linkit zu stärken. Die Kernaufgabe
+            liegt somit darin, die Mitglieder bei ihrer persönlichen
+            Weiterentwicklung zu unterstützen und den Zusammenhalt des Teams
+            durch die Organisation von Team-Events zu erhöhen. Neben der Werbung
+            und Integration von neuen Mitgliedern, verantwortet das Ressort
+            zusätzlich auch die Administration bestehender Mitglieder und der
+            aktive Kontakt zu ehemaligen Mitgliedern.
+          </p>
+        </div>
+        <div class="col-lg-3 p-2 text-center"></div>
+        <div class="col-lg-3 p-2 text-center">
+          <img
+            class="profile-pic"
+            src="assets/pics/ueber-uns/RL/Magnus_Landwehr.jpg"
+            alt="Magnus Landwehr"
+          />
+          <h3 class="text-white pt-3">
+            <span [ngStyle]="{ backgroundColor: this.siteColor }">Magnus Landwehr</span>
+          </h3>
+
+          <p>Ressortleiter HR</p>
+          <button
+            type="button"
+            class="btn btn-link size"
+            onclick="location.href='mailto:magnus.landwehr@linkit.tech'"
+            data-toggle="tooltip"
+            data-placement="bottom"
+            title="Schreibe eine E-Mail"
+          >
+            <svg-icon
+              class="align-self-center p-2"
+              src="./assets/streamline-light/19-emails/07-email-actions/email-action-unread.svg"
+              [svgStyle]="{ 'width.px': 25, 'padding-top.px': 6 }"
+            >
+            </svg-icon></button
+          ><button
+            type="button"
+            class="btn btn-link size"
+            onclick="location.href='https://www.linkedin.com/in/magnus-landwehr-399b44144/'"
+            data-toggle="tooltip"
+            data-placement="bottom"
+            title="LinkedIn Profil"
+          >
+            <svg-icon
+              class="align-self-center p-2"
+              src="./assets/streamline-light/53-logos/07-professional networks/professional-network-linkedin.svg"
+              [svgStyle]="{ 'width.px': 25 }"
+            ></svg-icon>
+          </button>
+        </div>
+      </div>
+
+      <!-- Interne Projekte -->
+      <div class="row my-3 align-items-center d-flex flex-wrap-reverse">
+        <div class="col-lg-6 p-2 text-center d-flex flex-wrap">
+
+          <div class="col-lg-6 p-2 text-center">
+            <img
+              class="profile-pic"
+              alt="Tom Körner"
+              src="assets\pics\ueber-uns\RL\Tom_Koerner.jpg"
+            />
+            <h3 class="text-white pt-3">
+              <span [ngStyle]="{ backgroundColor: this.siteColor }">Tom Körner</span>
+            </h3>
+
+            <p>
+              Projektleiter
+
+            </p>
+            <button
+              type="button"
+              class="btn btn-link size"
+              onclick="location.href='mailto:tom.koerner@linkit.tech'"
+              data-toggle="tooltip"
+              data-placement="bottom"
+              title="Schreibe eine E-Mail"
+            >
+              <svg-icon
+                class="align-self-center p-2"
+                src="./assets/streamline-light/19-emails/07-email-actions/email-action-unread.svg"
+                [svgStyle]="{ 'width.px': 25, 'padding-top.px': 6 }"
+              >
+              </svg-icon></button
+            >
+          </div>
+
+          <div class="col-lg-6 p-2 text-center">
+            <img class="profile-pic" src="assets\pics\ueber-uns\RL\Lars_Timm.jpg" alt="Lars Timm" />
+
+            <h3 class="text-white pt-3">
+              <span [ngStyle]="{ backgroundColor: this.siteColor }">Lars Timm</span>
+            </h3>
+            <p>
+              Projektleiter
+            </p>
+            <button type="button" class="btn btn-link size" onclick="location.href='mailto:lars.timm@linkit.tech'"
+              data-toggle="tooltip" data-placement="bottom" title="Schreibe eine E-Mail">
+              <svg-icon class="align-self-center p-2"
+                src="./assets/streamline-light/19-emails/07-email-actions/email-action-unread.svg"
+                [svgStyle]="{ 'width.px': 25, 'padding-top.px': 6 }">
+              </svg-icon>
+            </button><button type="button" class="btn btn-link size"
+              onclick="location.href='https://www.linkedin.com/in/lars-timm-086500142/'" data-toggle="tooltip"
+              data-placement="bottom" title="LinkedIn Profil">
+              <svg-icon class="align-self-center p-2"
+                src="./assets/streamline-light/53-logos/07-professional networks/professional-network-linkedin.svg"
+                [svgStyle]="{ 'width.px': 25 }"></svg-icon>
+            </button>
+          </div>
+        </div>
+        <div class="col-lg-6 p-2">
+          <h3 class="text-center text-lg-left">Interne Projekte</h3>
+          <p class="info-text">
+            Im Rahmen interner Projekte erhalten unsere Mitglieder die
+            Möglichkeit, ihr erlerntes Wissen praktisch anzuwenden und zu
+            erweitern. Dazu organisieren wir regelmäßig Data-Science Challenges,
+            bei denen in kleinen gemischten Teams Datensätze bearbeitet und
+            analysiert werden. Die verschiedenen Schwierigkeitsstufen
+            ermöglichen dabei Studierenden aller Wissenlevels durch den
+            Austausch in der Gruppe, ihre Fähigkeiten auszubauen und sich
+            spielerisch zu messen. Parallel dazu bieten wir immer wieder
+            wechselnde Projekte rund um unseren Schwerpunkt Industrie 4.0 an.
+            Diese umfassen z.B. die Programmierung eines auf Linearmotoren
+            basierenden Messemodells oder die Aufbereitung von Technologietrends
+            bis hin zur Konzeption von ganzen Schulungen. Die hierdurch
+            erlangten Kompetenzen, die erstellten Unterlagen sowie das
+            aggregierte Wissen qualifizieren unsere Mitglieder sowohl für ihre
+            persönliche berufliche Zukunft, als auch für externe
+            Kooperationsprojekte mit der Industrie.
+          </p>
+        </div>
+      </div>
+
+      <!-- Schulungen -->
+      <div class="row my-3 align-items-center d-flex flex-wrap">
+        <div class="col-lg-6 p-2">
+          <h3 class="text-center text-lg-left">Schulungen</h3>
+          <p class="info-text">
+            Unser Projektteam erstellt Schulungen für die Programmiersprache Python im Data Science Bereich. Von den Grundlagen bis
+            zu industrienahen Vertiefungen schaffen wir eine Plattform, damit sich Mitglieder mit verschiedensten Vorkenntnissen
+            nachhaltig durch Unser Angebot weiterbilden können. Zusätzlich bringen wir Unternehmen Data Science und dessen
+            Anwendungsmöglichkeiten bei externen Schulungen näher.
+          </p>
+        </div>
+        <div class="col-lg-6 p-2 text-center">
+          <img class="profile-pic" src="assets\pics\ueber-uns\RL\Timm_Vogler.jpg" alt="Timm Vogler" />
+
+          <h3 class="text-white pt-3">
+            <span [ngStyle]="{ backgroundColor: this.siteColor }">Timm Vogler</span>
+          </h3>
+          <p>Projektleiter</p>
+          <button type="button" class="btn btn-link size" onclick="location.href='mailto:timm.vogler@linkit.tech'"
+            data-toggle="tooltip" data-placement="bottom" title="Schreibe eine E-Mail">
+            <svg-icon class="align-self-center p-2"
+              src="./assets/streamline-light/19-emails/07-email-actions/email-action-unread.svg"
+              [svgStyle]="{ 'width.px': 25, 'padding-top.px': 6 }">
+            </svg-icon>
+          </button>
+          <button type="button" class="btn btn-link size"
+            onclick="location.href='https://www.linkedin.com/in/timm-vogler-3307b618a/'">
+            <svg-icon class="align-self-center p-2"
+              src="./assets/streamline-light/53-logos/07-professional networks/professional-network-linkedin.svg"
+              [svgStyle]="{ 'width.px': 25 }"></svg-icon>
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Industrieprojekte -->
+      <div class="row my-3 align-items-center d-flex flex-wrap-reverse">
+
+        <div class="col-lg-3 p-2 text-center">
+          <img
+            class="profile-pic"
+            src="assets/pics/ueber-uns/RL/Felicitas_Renn.jpg"
+            alt="Felicitas Renn"
+          />
+          <h3 class="text-white pt-3">
+            <span [ngStyle]="{ backgroundColor: this.siteColor }">Felicitas Renn</span>
+          </h3>
+
+          <p>Ressortleiterin Industrieprojekte</p>
+          <button
+            type="button"
+            class="btn btn-link size"
+            onclick="location.href='mailto:renn.felicitas@linkit.tech'"
+            data-toggle="tooltip"
+            data-placement="bottom"
+            title="Schreibe eine E-Mail"
+          >
+            <svg-icon
+              class="align-self-center p-2"
+              src="./assets/streamline-light/19-emails/07-email-actions/email-action-unread.svg"
+              [svgStyle]="{ 'width.px': 25, 'padding-top.px': 6 }"
+            >
+            </svg-icon>
+          </button>
+          <button type="button" class="btn btn-link size"
+            onclick="location.href='https://www.linkedin.com/in/felicitas-renn-ab9464168/'" data-toggle="tooltip"
+            data-placement="bottom" title="LinkedIn Profil">
+            <svg-icon class="align-self-center p-2"
+              src="./assets/streamline-light/53-logos/07-professional networks/professional-network-linkedin.svg"
+              [svgStyle]="{ 'width.px': 25 }"></svg-icon>
+          </button>
+        </div>
+        <div class="col-lg-3 p-2 text-center">
+          <img
+            class="profile-pic"
+            src="assets/pics/ueber-uns/RL/Keno_Henrich.jpg"
+            alt="Keno Henrich"
+          />
+
+          <h3 class="text-white pt-3">
+            <span [ngStyle]="{ backgroundColor: this.siteColor }">Keno Henrich</span>
+          </h3>
+          <p>Ressortleiter Industrieprojekte</p>
+          <button
+            type="button"
+            class="btn btn-link size"
+            onclick="location.href='mailto:keno.henrich@linkit.tech'"
+            data-toggle="tooltip"
+            data-placement="bottom"
+            title="Schreibe eine E-Mail"
+          >
+            <svg-icon
+              class="align-self-center p-2"
+              src="./assets/streamline-light/19-emails/07-email-actions/email-action-unread.svg"
+              [svgStyle]="{ 'width.px': 25, 'padding-top.px': 6 }"
+            >
+            </svg-icon></button
+          ><button
+            type="button"
+            class="btn btn-link size"
+            onclick="location.href='https://www.linkedin.com/in/keno-henrich-3298a1185/'"
+            data-toggle="tooltip"
+            data-placement="bottom"
+            title="LinkedIn Profil"
+          >
+            <svg-icon
+              class="align-self-center p-2"
+              src="./assets/streamline-light/53-logos/07-professional networks/professional-network-linkedin.svg"
+              [svgStyle]="{ 'width.px': 25 }"
+            ></svg-icon>
+          </button>
+        </div>
+        <div class="col-lg-6 p-2">
+          <h3 class="text-center text-lg-left">Industrieprojekte</h3>
+          <p class="info-text">
+            Bei Industrieprojekten wird ein Projekt bei einem Unternehmen
+            durchgeführt. Als führender studentischer Ansprechpartner für
+            Industrie 4.0 sehen wir es als unsere Mission, Studenten und
+            Unternehmen von dem Thema zu begeistern und bei der Ideenfindung
+            bzw. Umsetzung zu unterstützen. Durch unser großes Netzwerk von
+            Partnerunternehmen - mit hoher Expertise in den verschiedenen
+            Bereichen von Industrie 4.0 - können wir zudem bei der Umsetzung der
+            Strategien helfen und bei Bedarf kompetent Partner vermitteln.
+          </p>
+        </div>
+      </div>
+
+      <!-- Alumni-->
+      <div class="row my-3 align-items-center d-flex flex-wrap">
+
+        <div class="col-lg-6 p-2">
+          <h3 class="text-center text-lg-left">Alumni</h3>
+          <p class="info-text">
+            Alumni sind ehemalige Mitglieder unserer Hochschulgruppe, die uns
+            langfristig verbunden bleiben. Durch regelmäßigen Austausch und
+            Veranstaltungen wollen wir das Netzwerk zwischen und zu unseren
+            Alumni stärken und profitieren so von den Erfahrungen und Kontakten
+            der ehemaligen Mitglieder.
+          </p>
+        </div>
+        <div class="col-lg-3 p-2 text-center"></div>
+          <div class="col-lg-3 p-2 text-center">
+            <svg-icon class="order-md-1 align-self-center p-3"
+              src="./assets/streamline-light/18-avatars/10-geometric-women-professions/professions-woman-office-2.svg"
+              [svgStyle]="{ 'width.px': 120 }">
+            </svg-icon>
+            <!-- Force next columns to break to new line -->
+            <div class="w-100"></div>
+            <button [ngStyle]="{
+                        backgroundColor: this.siteColor,
+                        borderColor: this.siteColor
+                      }" routerLink="/alumni" type="button" class="btn btn-primary">
+              Ehemalige
+            </button>
+          </div>
+
+      </div>
+    </div>
+  </div>
+</div>

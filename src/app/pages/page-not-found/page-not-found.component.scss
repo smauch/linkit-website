@@ -1,0 +1,53 @@
+/* Page not found animation */
+@keyframes fade-animation {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.75;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @-o-keyframes fade-animation {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.75;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @-moz-keyframes fade-animation {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.75;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes fade-animation {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.75;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .animate-flicker {
+    -webkit-animation: fade-animation 0.5s infinite;
+    -moz-animation: fade-animation 0.5s infinite;
+    -o-animation: fade-animation 0.5s infinite;
+    animation: fade-animation 0.5s infinite;
+  }
+  
+  /* Page not found animation end */

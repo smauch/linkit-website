@@ -1,0 +1,384 @@
+/* Font import from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+/* Font Family */
+html,
+body {
+  font-family: "Roboto", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 100%;
+}
+
+/* Font Sizes */
+h1 {
+  font-size: 2.25rem;
+  color: black;
+}
+
+h2 span {
+  padding: 0 5px;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+h2 {
+  font-size: 1.625rem;
+  color: black;
+}
+
+h3 span {
+  padding: 0 5px;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+h3 {
+  font-size: 1.25rem;
+  color: black;
+}
+
+p {
+  font-size: 1rem;
+  color: black;
+}
+
+li {
+  color: black;
+}
+
+ol {
+  font-size: 1rem;
+  color: black;
+}
+
+:root {
+  --linkit-hellblau: #00b7e0;
+  --linkit-dunkelblau: #0067a4;
+  --linkit-tuerkis: #37b39f;
+  --linkit-gruen: #84be41;
+  --linkit-gelb: #f2b229;
+  --linkit-orange: #f18700;
+  --linkit-rot: #e30613;
+  --linkit-pink: #c7017f;
+  --linkit-grau: #e7e7e7;
+  --linkit-dunkelgrau: #7f7f7f;
+  --linkit-schwarz: black;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+svg {
+  pointer-events: none;
+}
+
+.linkit-logo {
+  height: 25px;
+}
+
+// Navbar
+
+.nav-link {
+  color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.nav-link.active {
+  color: rgba(0, 0, 0, 0.9) !important;
+  // text-decoration: underline !important;
+  font-weight: bold;
+}
+
+.navbar-brand {
+  font-size: 1rem !important;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+}
+
+.nav-container {
+  padding-right: 0px;
+}
+
+// Navbar end
+
+.footer {
+  padding-top: 2rem;
+  background-color: var(--linkit-dunkelblau);
+  color: white !important;
+}
+.footer-link {
+  color: white !important;
+}
+
+.three-quarters-landing {
+  /* no hover title */
+  pointer-events: none;
+  /* Full height */
+  height: calc(75vh);
+  /* google, safari */
+  height: -webkit-calc(75vh);
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.landing-headline {
+  padding-top: 10vh !important;
+}
+
+.card-wrapper {
+  margin-top: -70px;
+}
+
+.news-cards {
+  background-color: white;
+}
+
+.info-container {
+  margin: 45px 0;
+}
+
+.seperator-polygon {
+  margin-bottom: 60px;
+}
+
+.fullscreen-landing {
+  /* no hover title */
+  pointer-events: none;
+  /* Full height */
+  height: calc(100vh - 61px);
+  /* google, safari */
+  height: -webkit-calc(100vh - 61px);
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content {
+  margin-top: 10vh;
+}
+
+.center-img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50vw; /* Need a specific value to work */
+}
+
+.text-bottom {
+  position: absolute;
+  bottom: 0px;
+}
+
+.not-found-wrapper {
+  position: relative;
+}
+
+/* Linkit Corporate Desgin elements */
+
+.text-bg-color {
+  background-color: currentColor;
+  padding: 0.25rem;
+}
+
+.paragraph-rect {
+  width: 250px;
+  text-align: justify;
+}
+
+.info-text {
+  text-align: justify;
+}
+
+.info-wrapper {
+  width: 400px;
+}
+
+.info-icon {
+  width: 120px;
+  height: 120px;
+}
+
+.card-body {
+  color: black;
+}
+
+.btn-link {
+  color: black;
+}
+
+.btn-link:hover {
+  color: currentColor;
+}
+
+.social-icons {
+  color: transparent !important;
+}
+
+.btn-primary:hover {
+  color: currentColor !important;
+  background-color: transparent !important;
+}
+
+.scroll-icon {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  color: currentColor;
+  position: absolute;
+  top: 90vh;
+  left: 50vw;
+}
+
+.headline-wrapper {
+  max-width: 600px;
+}
+
+.separator-pic {
+  /* no hover title */
+  pointer-events: none;
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 45px 0;
+  /* Create the parallax scrolling effect */
+  //  background-attachment: fixed;
+}
+
+.profile-pic {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+.logo-wall {
+  padding: 15px;
+  height: 80px;
+  max-width: 90vw;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  opacity: 0.6;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.logo-wall:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.polygon-color {
+  z-index: 3;
+  bottom: -50%;
+  -webkit-transform: translateY(50%);
+  transform: translateY(50%);
+  position: relative;
+  min-height: 100px !important;
+  background-color: currentColor;
+  width: 100% !important;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 50px), 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 50px), 0 100%);
+}
+
+.polygon-pic {
+  /* no hover title */
+  pointer-events: none;
+  z-index: 2;
+  position: relative;
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Create the parallax scrolling effect */
+  //  background-attachment: fixed;
+}
+
+.polygon-text {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+@media (max-width: 768px) {
+  .polygon-color {
+    z-index: 3;
+    bottom: -50%;
+    -webkit-transform: translateY(50%);
+    transform: translateY(50%);
+    position: relative;
+    min-height: 100px !important;
+    background-color: currentColor;
+    width: 100% !important;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 25px), 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 25px), 0 100%);
+  }
+
+  .polygon-text {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .separator-pic {
+    /* no hover title */
+    pointer-events: none;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Create the parallax scrolling effect */
+    //  background-attachment: fixed;
+  }
+
+  .polygon-pic {
+    /* no hover title */
+    pointer-events: none;
+    z-index: 2;
+    position: relative;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Create the parallax scrolling effect */
+    //  background-attachment: fixed;
+  }
+
+  .info-wrapper {
+    text-align: center !important;
+  }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+//@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+//@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 992px) {
+  .center-img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100vw; /* Need a specific value to work */
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+//@media (min-width: 1200px) { ... }
