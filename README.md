@@ -3,7 +3,7 @@
 
 
 ## About The Project
-This was the linkit.tech website I developed when I was head of department at linkit.
+This was the linkit.tech website I developed when I was head of IT at the university group linkit.
 
 ![grafik](https://user-images.githubusercontent.com/34418781/214537607-09f811c4-f913-4ca0-87c3-2e65fb6e6bbc.png)
 
